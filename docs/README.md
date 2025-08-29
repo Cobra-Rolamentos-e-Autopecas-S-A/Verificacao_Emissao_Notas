@@ -1,6 +1,6 @@
 ---
 title: Documentação
-category: visao-geral
+category: documentation
 ---
 
 # 📊 Monitoramento de Notas Fiscais — Google Apps Script
