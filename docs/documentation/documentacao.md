@@ -1,10 +1,8 @@
 ---
-title: Getting Started with Documentação Git
-excerpt: >-
-  This page will help you get started with Documentação Git. You'll be up and
-  running in a jiffy!
-hidden: false
+title: Documentação
+category: documentation
 ---
+
 # 📊 Monitoramento de Notas Fiscais — Google Apps Script
 
 Este projeto automatiza o **controle de emissão de notas fiscais** utilizando **Google Apps Script** integrado ao Google Sheets.  
