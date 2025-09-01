@@ -1,3 +1,6 @@
-- documentacao
-- documentacao_auto
-
+- category: documentacao
+  pages:
+    - documentacao  
+- category: documentacao_auto
+  pages:
+    - documentacao_auto  

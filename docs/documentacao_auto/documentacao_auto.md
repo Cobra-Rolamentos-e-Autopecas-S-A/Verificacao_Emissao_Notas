@@ -1,6 +1,6 @@
 ---
 title: Documentação Automatica
-category: documentation
+category: documentacao_auto
 hidden: true
 link:
   new_tab: false
