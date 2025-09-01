@@ -1,7 +1,7 @@
 ---
 title: Documentação
 category: documentation
-hidden: false
+hidden: true
 link:
   new_tab: false
   url: https://www.cobradoc.com/
