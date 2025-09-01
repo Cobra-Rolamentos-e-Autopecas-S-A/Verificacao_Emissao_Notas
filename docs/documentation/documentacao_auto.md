@@ -1,9 +1,6 @@
 ---
 title: Documentação Automatica
 category: documentation
-hidden: true
-link:
-  new_tab: false
 ---
 
 <a name="tentarConverterParaData"></a>
