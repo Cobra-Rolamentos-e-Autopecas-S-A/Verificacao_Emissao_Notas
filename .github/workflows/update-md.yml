@@ -1,32 +1,40 @@
-name: Atualizar README
+name: Gerar documentação automática
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "v1.0" ]
+    paths:
+      - 'verifica.js'
 
 jobs:
-  update-readme:
+  generate-docs:
     runs-on: ubuntu-latest
     steps:
-      # 1️⃣ Faz checkout do repositório
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
-      # 2️⃣ Atualiza o documentacao.md
-      - name: Atualizar documentacao.md
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Instalar dependências
+        run: npm ci
+
+      - name: Gerar documentação
+        run: npm run generate-docs
+
+      - name: Commitar e push docs geradas (se houver mudanças)
         run: |
-          # Atualiza o arquivo com a data
-          echo "Última atualização: $(date)" > docs/documentatio/documentacao.md
-          
-          # Configura o Git para o commit
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          
-          # Adiciona mudanças
-          git add docs/documentatio/documentacao.md
-          
-          # Commit apenas se houver mudanças
-          git diff --cached --quiet || git commit -m "Atualiza documentacao.md automaticamente"
-          
-          # Push para o branch main
-          git push
+          git add docs/documentacao_auto.md
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions"
+            git config user.email "actions@github.com"
+            git commit -m "Atualiza documentação automática (verifica.js)"
+            git push
+          else
+            echo "Nenhuma mudança na documentação gerada."
+          fi
