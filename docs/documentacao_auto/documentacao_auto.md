@@ -2,16 +2,17 @@
 title: Documentação Automática
 category:
   uri: documentacao_auto
-hidden: false
+privacy:
+  view: public
 ---
 
 <a name="tentarConverterParaData"></a>
 
-## tentarConverterParaData(valor) ⇒ <code>Date</code> \| <code>null</code>
+## tentarConverterParaData(valor) ⇒ <code>Date</code> | <code>null</code>
 Tenta converter um valor em um objeto Date válido.
 
 **Kind**: global function  
-**Returns**: <code>Date</code> \| <code>null</code> - Data válida ou null se não conseguir converter  
+**Returns**: <code>Date</code> | <code>null</code> - Data válida ou null se não conseguir converter  
 
 | Param | Type | Description |
 | --- | --- | --- |

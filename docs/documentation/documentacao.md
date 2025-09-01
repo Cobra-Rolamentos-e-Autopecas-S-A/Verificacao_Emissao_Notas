@@ -2,8 +2,10 @@
 title: Verificação de envio de NF's
 category:
   uri: documentacao
-hidden: false
+privacy:
+  view: public
 ---
+
 # 📊 Monitoramento de Notas Fiscais — Google Apps Script
 
 Este projeto automatiza o **controle de emissão de notas fiscais** utilizando **Google Apps Script** integrado ao Google Sheets.

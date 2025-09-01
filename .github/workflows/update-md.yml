@@ -1,4 +1,4 @@
-name: Gerar documentação automática
+name: Gerar e publicar documentação
 
 on:
   push:
@@ -7,29 +7,35 @@ on:
       - 'verifica.js'
 
 jobs:
-  generate-docs:
+  generate-and-publish-docs:
     runs-on: ubuntu-latest
+
     steps:
+      # 1️⃣ Pegar o código
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
           persist-credentials: true
 
+      # 2️⃣ Configurar Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
 
+      # 3️⃣ Instalar dependências
       - name: Instalar dependências
         run: npm ci
 
+      # 4️⃣ Gerar documentação
       - name: Gerar documentação
         run: npm run generate-docs
 
-      - name: Commitar e push docs geradas (se houver mudanças)
+      # 5️⃣ Commit automático das mudanças, se houver
+      - name: Commitar e push docs geradas
         run: |
-          git add docs/documentacao_auto/documentacao_auto.md
+          git add docs/**
           if ! git diff --cached --quiet; then
             git config user.name "github-actions"
             git config user.email "actions@github.com"
@@ -38,3 +44,9 @@ jobs:
           else
             echo "Nenhuma mudança na documentação gerada."
           fi
+
+      # 6️⃣ Publicar no ReadMe.io
+      - name: Publicar no ReadMe.io
+        env:
+          README_API_KEY: ${{ secrets.README_API_KEY }}
+        run: rdme docs upload ./docs --version=current --yes
