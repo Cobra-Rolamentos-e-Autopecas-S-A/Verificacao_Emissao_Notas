@@ -1,9 +1,8 @@
 ---
-title: Documentação Automatica
-category: documentacao_auto
-hidden: true
-link:
-  new_tab: false
+title: Documentação Automática
+category:
+  uri: documentacao_auto
+hidden: false
 ---
 
 <a name="tentarConverterParaData"></a>

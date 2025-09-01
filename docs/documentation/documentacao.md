@@ -1,9 +1,8 @@
 ---
 title: Verificação de envio de NF's
-category: documentation
-hidden: true
-link:
-  new_tab: false
+category:
+  uri: documentacao
+hidden: false
 ---
 # 📊 Monitoramento de Notas Fiscais — Google Apps Script
 
