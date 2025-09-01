@@ -7,8 +7,8 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-docs": "jsdoc2md verifica.js > docs/documentacao_auto/documentacao_auto.md"
+    "generate-docs": "jsdoc2md verifica.js > docs/documentacao_auto.md",
+    "watch-docs": "nodemon --watch verifica.js --exec \"npm run generate-docs\""
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Cobra-Rolamentos-e-Autopecas-S-A/Verificacao_Emissao_Notas#readme",
   "devDependencies": {
-    "jsdoc-to-markdown": "^9.1.2"
+    "jsdoc-to-markdown": "^9.1.2",
+    "nodemon": "^3.1.10"
   }
 }
