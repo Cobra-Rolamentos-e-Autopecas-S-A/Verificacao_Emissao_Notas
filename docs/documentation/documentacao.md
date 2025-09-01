@@ -1,6 +1,7 @@
 ---
 title: Documentação
 category: documentation
+hidden: false
 ---
 # 📊 Monitoramento de Notas Fiscais — Google Apps Script
 
