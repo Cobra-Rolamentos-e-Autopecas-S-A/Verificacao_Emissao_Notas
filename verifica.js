@@ -6,7 +6,6 @@
 // Função principal que verifica notas atrasadas na planilha "Contratos 2025"
 function atrasosNF() { 
 
-    // fafadfrszfdsfs
 
  // Executa apenas se for Segunda (1), Quarta (3) ou Sexta (5)
 
