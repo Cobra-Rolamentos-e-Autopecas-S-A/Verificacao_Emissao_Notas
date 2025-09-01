@@ -13,7 +13,7 @@ Ele verifica a planilha **"Contratos 2025"**, identifica atrasos e envia **alert
 
 ***
 
-## ⚙️ Funcionalidades  7
+## ⚙️ Funcionalidades  
 
 * 🔄 Executa automaticamente em dias úteis específicos (**Segunda, Quarta e Sexta**).
 * 📑 Lê dados da planilha `Contratos 2025`. 
