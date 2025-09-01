@@ -2,6 +2,9 @@
 title: Documentação
 category: documentation
 hidden: false
+link:
+  new_tab: true
+  url: https://www.cobradoc.com/
 ---
 # 📊 Monitoramento de Notas Fiscais — Google Apps Script
 
