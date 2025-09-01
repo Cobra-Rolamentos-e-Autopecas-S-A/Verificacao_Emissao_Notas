@@ -13,7 +13,7 @@ function atrasosNF() {
   if (![1, 3, 5].includes(diaDaSemana)) { 
     Logger.log("🚫 Script não executado hoje (fora dos dias permitidos).");
     return;
-  }
+  } 
 
   // CONFIGURAÇÕES INICIAIS
   const NOME_DA_PLANILHA = "Contratos 2025";                                                           // Nome da aba da planilha
