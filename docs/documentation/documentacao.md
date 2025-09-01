@@ -6,7 +6,7 @@ privacy:
   view: public
 ---
 
-# 📊 Monitoramento de Notas Fiscais — Google Apps Script
+# 📊 Monitoramento de Notas Fiscais — Google Apps Script 7
 
 Este projeto automatiza o **controle de emissão de notas fiscais** utilizando **Google Apps Script** integrado ao Google Sheets.
 Ele verifica a planilha **"Contratos 2025"**, identifica atrasos e envia **alertas automáticos por e-mail** para responsáveis e setores internos.
