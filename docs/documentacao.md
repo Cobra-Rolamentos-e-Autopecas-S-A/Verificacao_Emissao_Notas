@@ -1,6 +1,6 @@
 ---
 title: Verificação de envio de NF's
-# category: documentation
+category: documentation
 hidden: true
 link:
   new_tab: false
