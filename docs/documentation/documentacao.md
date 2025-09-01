@@ -4,7 +4,6 @@ category: documentation
 hidden: true
 link:
   new_tab: false
-  url: https://www.cobradoc.com/
 ---
 # 📊 Monitoramento de Notas Fiscais — Google Apps Script
 
