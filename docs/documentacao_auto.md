@@ -1,3 +1,11 @@
+---
+title: Documentação Automatica
+category: documentacao_auto
+hidden: true
+link:
+  new_tab: false
+---
+
 <a name="tentarConverterParaData"></a>
 
 ## tentarConverterParaData(valor) ⇒ <code>Date</code> \| <code>null</code>
