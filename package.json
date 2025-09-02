@@ -6,10 +6,11 @@
   "directories": {
     "doc": "docs"
   },
-  "scripts": {
-    "generate-docs": "jsdoc2md verifica.js > docs/documentacao_auto.md",
-    "watch-docs": "nodemon --watch verifica.js --exec \"npm run generate-docs\""
-  },
+ "scripts": {
+  "generate-docs": "jsdoc2md verifica.js > docs/documentacao_auto.md",
+  "update-readme": "node updateReadMe.js",
+  "watch-docs": "nodemon --watch verifica.js --exec \"npm run generate-docs && npm run update-readme\""
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Cobra-Rolamentos-e-Autopecas-S-A/Verificacao_Emissao_Notas.git"
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/Cobra-Rolamentos-e-Autopecas-S-A/Verificacao_Emissao_Notas#readme",
   "devDependencies": {
     "jsdoc-to-markdown": "^9.1.2",
+    "node-fetch": "^2.7.0",
     "nodemon": "^3.1.10"
   }
 }

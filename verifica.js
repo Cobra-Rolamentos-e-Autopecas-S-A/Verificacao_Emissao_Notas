@@ -1,12 +1,11 @@
-/**
- * 
- * @param {any} valor Valor que pode ser Date, string ou vazio
- * @returns {Date|null} Data válida ou null se não conseguir converter
- */
+// /**
+//  * 
+//  * @param {any} valor Valor que pode ser Date, string ou vazio
+//  * @returns {Date|null} Data válida ou null se não conseguir converter
+//  */
 // Função principal que verifica notas atrasadas na planilha "Contratos 2025"
 function atrasosNF() { 
-
-
+// dasdal
  // Executa apenas se for Segunda (1), Quarta (3) ou Sexta (5)
 
   const hoje = new Date();
@@ -164,11 +163,11 @@ function atrasosNF() {
   }
 }
 
-/**
- * Tenta converter um valor em um objeto Date válido.
- * @param {any} valor Valor que pode ser Date, string ou vazio
- * @returns {Date|null} Data válida ou null se não conseguir converter
- */
+// /**
+//  * Tenta converter um valor em um objeto Date válido.
+//  * @param {any} valor Valor que pode ser Date, string ou vazio
+//  * @returns {Date|null} Data válida ou null se não conseguir converter
+//  */
 // Função para tentar converter um valor em uma data real com segurança
 function tentarConverterParaData(valor) {
     if (!valor) return null; // Se o valor for nulo ou indefinido, retorna null
